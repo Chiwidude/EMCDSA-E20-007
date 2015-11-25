@@ -18,3 +18,25 @@ data <- as.data.frame(cbind(x, y))
 summary(data)
 View(data)
 
+x
+y
+data
+summary(data)
+View(data)
+
+installed.packages()
+library(ggplot2)
+ggplot(data,aes(x=x,y=y)) + 
+  geom_point(size=2) + 
+  ggtitle("Scatterplot of X and Y") + 
+  theme(axis.text=element_text(size = 12), 
+        axis.title =element_text(size = 14), 
+        plot.title = element_text(size = 20,face="bold"))
+
+
+getwd()
+
+
+
+
+  
